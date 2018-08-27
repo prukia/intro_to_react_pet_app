@@ -61,14 +61,13 @@ class App extends React.Component {
                 key={pet.id}
                 name={pet.name}
                 breed={breed}
+                media={pet.media}
+                location={ `${pet.contact.city}, ${pet.contact.state}` }
               />
             )
           })}
-      //   </div>
-      //   <Pet name="Luna" animal="dog" breed="Havanese" />
-      //   <Pet name="Pepper" animal="bird" breed="Cockatiel" />
-      //   <Pet name="Doink" animal="cat" breed="Mix" />
-      // </div>
+        </div>
+      </div>
     )
   }
 }
