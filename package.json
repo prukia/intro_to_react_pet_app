@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{js,jsx,css,json} \"",
-    "formatCheck": "prettier --list-different \"src/**/*.{js,jsx,css,json} \"",
     "format": "eslint \"**/*.{js,jsx} \"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "formatCheck": "prettier --list-different \"src/**/*.{js,jsx,css,json} \"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,11 @@
     "eslint": "^5.4.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-plugin-prettier": "^2.6.2",
+    "parcel-bundler": "^1.9.7",
     "prettier": "^1.14.2"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }

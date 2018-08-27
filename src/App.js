@@ -1,10 +1,6 @@
-const Pet = props => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, props.name), //instead of name directly
-    React.createElement("h2", {}, props.animal),
-    React.createElement("h2", {}, props.breed)
-  ]);
-};
+import React from 'react';
+import { render } from "react-dom";
+import Pet from "./Pet";
 
 class App extends React.Component {
   handleTitleClick() {
@@ -35,4 +31,4 @@ class App extends React.Component {
     ]);
   }
 }
-ReactDOM.render(React.createElement(App), document.getElementById("root")); //render root to div on line 14
+render(React.createElement(App), document.getElementById("root")); //render root to div on line 14
