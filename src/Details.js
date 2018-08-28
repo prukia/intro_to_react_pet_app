@@ -9,15 +9,6 @@ const petfinder = pf({
 });
 
 class Details extends React.Component {
-  // constructor(props) {
-  //    super(props);
-  //
-  //    this.state = {
-  //       loading: true
-  //     };
-  //  }
-
- // refactored way with babel. no longer need constructors
   state = {
     loading: true
   };
