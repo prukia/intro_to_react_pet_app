@@ -66,7 +66,7 @@ class Details extends React.Component {
         <div>
           <h1>{name}</h1>
           <h2>{`${animal} — ${breed} — ${location}`}</h2>
-          <button onClick={this.toggleModal}>Adopt {name}</button>;
+          <button onClick={this.toggleModal}>Adopt {name}</button>
           <p>{description}</p>
           {showModal ? (
               <Modal>
